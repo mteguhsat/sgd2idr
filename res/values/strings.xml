@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SGD2IDR</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_section1">Rates</string>
+    <string name="title_section2">Calculator</string>
+    <string name="title_section3">Section 3</string>
+    <string name="calc_section_name">coming soon..</string>
+    <string name="rate_section_name">Rates</string>
+    <string name="sgd1">1 SGD =</string>
+    <string name="trytoconnect">try to connect..</string>
+    <string name="get_data">getting data..</string>
+    <string name="dbsheader">DBS</string>
+    <string name="bniheader">BNI</string>
+    <string name="refresh">Refresh</string>
+    <string name="bcaheader">BCA (Kurs Tengah)</string>
+    <string-array name="conversion_mode">
+        <item>SGD -> IDR</item>
+        <item>IDR -> SGD</item>
+    </string-array>
+    <string name="conversion_mode">Conversion</string>
+    <string name="rate_version">Rate By</string>
+    <string-array name="banks">
+        <item>BNI</item>
+        <item>DBS</item>
+        <item>BCA (Kurs Tengah)</item>
+        </string-array>
+    <string name="amountRp">Amount (Rp.)</string>
+    <string name="amountSg">Amount (S$)</string>
+    <string name="amounthint">Enter amount</string>
+    <string name="calcbtn">Calculate</string>
+    <string name="resetbtn">Reset</string>
+    <string name="_rp">$/Rp</string>
+    <string name="medium_text">You get :</string>
+    
+</resources>

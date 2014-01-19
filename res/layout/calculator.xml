@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity$CalculatorFragment" >
+
+    <Spinner
+        android:id="@+id/spinconversmode"
+        android:layout_width="220dip"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="110dp" />
+
+    <Spinner
+        android:id="@+id/spinbank"
+        android:layout_width="220dip"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/spinconversmode"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/spinconversmode" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/spinconversmode"
+        android:layout_alignBottom="@+id/spinconversmode"
+        android:text="@string/conversion_mode"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/spinbank"
+        android:layout_alignBottom="@+id/spinbank"
+        android:layout_alignLeft="@+id/textView1"
+        android:text="@string/rate_version"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/amountv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editAmount"
+        android:layout_alignBottom="@+id/editAmount"
+        android:layout_alignLeft="@+id/textView2"
+        android:text="@string/amountSg"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/editAmount"
+        android:layout_width="220dip"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/spinbank"
+        android:layout_below="@+id/spinbank"
+        android:layout_marginTop="35dp"
+        android:ems="10"
+        android:hint="@string/amounthint"
+        android:imeActionLabel="Calculate"
+        android:imeOptions="actionDone"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/resetbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/editAmount"
+        android:text="@string/resetbtn" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:text="@string/_rp"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/amountv"
+        android:layout_below="@+id/editAmount"
+        android:layout_marginTop="16dp"
+        android:text="@string/medium_text"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>

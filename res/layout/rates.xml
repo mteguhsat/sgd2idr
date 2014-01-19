@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity$RateSectionFragment" >
+
+    <TextView
+        android:id="@+id/bni"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="28dp"
+        android:text="@string/bniheader"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/connect_stat_bni"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bni"
+        android:layout_below="@+id/bni"
+        android:text="@string/trytoconnect" />
+
+    <TextView
+        android:id="@+id/last_update_bni"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/connect_stat_bni"
+        android:layout_below="@+id/connect_stat_bni"
+        android:text="@string/get_data" />
+
+    <TextView
+        android:id="@+id/connect_stat_dbs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/dbs"
+        android:layout_below="@+id/dbs"
+        android:text="@string/trytoconnect" />
+
+    <Button
+        android:id="@+id/refresh_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/last_update_bni"
+        android:layout_alignParentBottom="true"
+        android:text="@string/refresh" />
+
+    <TextView
+        android:id="@+id/last_update_dbs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/connect_stat_dbs"
+        android:layout_below="@+id/connect_stat_dbs"
+        android:text="@string/get_data" />
+
+    <TextView
+        android:id="@+id/unit_bni"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/rate_bni"
+        android:layout_alignBottom="@+id/rate_bni"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="14dp"
+        android:text="@string/sgd1" />
+
+    <TextView
+        android:id="@+id/rate_bni"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/last_update_bni"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="14dp"
+        android:text="@string/get_data" />
+
+    <TextView
+        android:id="@+id/rate_dbs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/unit_dbs"
+        android:layout_alignBottom="@+id/unit_dbs"
+        android:layout_alignLeft="@+id/rate_bni"
+        android:layout_marginTop="14dp"
+        android:text="@string/get_data" />
+
+    <TextView
+        android:id="@+id/unit_dbs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/last_update_dbs"
+        android:layout_below="@+id/last_update_dbs"
+        android:layout_alignLeft="@+id/unit_bni"
+        android:layout_marginTop="14dp"
+        android:text="@string/sgd1" />
+
+    <TextView
+        android:id="@+id/dbs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/last_update_bni"
+        android:layout_below="@+id/unit_bni"
+        android:layout_marginTop="26dp"
+        android:text="@string/dbsheader"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/bca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/last_update_dbs"
+        android:layout_below="@+id/rate_dbs"
+        android:layout_marginTop="35dp"
+        android:text="@string/bcaheader"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/connect_stat_bca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bca"
+        android:layout_below="@+id/bca"
+        android:text="@string/trytoconnect" />
+
+    <TextView
+        android:id="@+id/last_update_bca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/connect_stat_bca"
+        android:layout_below="@+id/connect_stat_bca"
+        android:text="@string/get_data" />
+
+    <TextView
+        android:id="@+id/unit_bca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/unit_dbs"
+        android:layout_below="@+id/last_update_bca"
+        android:layout_marginTop="18dp"
+        android:text="@string/sgd1" />
+
+    <TextView
+        android:id="@+id/rate_bca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/unit_bca"
+        android:layout_alignLeft="@+id/rate_dbs"
+        android:text="@string/get_data" />
+
+</RelativeLayout>
